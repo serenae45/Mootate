@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 525cf0ca031cd445e970dbbb58c8d959
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - health: {instanceID: 0}
+  - Player: {instanceID: 0}
+  - audioSource: {fileID: 5214637505368076863, guid: 37aa9becb10214d339b368bebcd15138, type: 3}
+  - cow_sound: {fileID: 8300000, guid: 71064b6e086214365bc745580c47ebaa, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
