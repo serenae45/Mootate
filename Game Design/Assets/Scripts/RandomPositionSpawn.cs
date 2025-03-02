@@ -11,6 +11,44 @@ public class RandomPositionSpawn : MonoBehaviour
     private int numRuns = 0;
     private Transform alarmPosition;
 
+    // public float minX, maxX, minY, maxY; // Define spawn area boundaries
+    // public LayerMask obstacleLayer;      // LayerMask for detecting obstacles
+    // public float spawnRadius = 0.5f;     // Radius for checking collisions
+
+    // void SetPos()
+    // {
+    //     int maxAttempts = 20; // Prevents infinite loops
+    //     int attempts = 0;
+    //     bool validPosition = false;
+
+    //     while (!validPosition && attempts < maxAttempts)
+    //     {
+    //         // Generate a random position within bounds
+    //         float randomX = Random.Range(minX, maxX);
+    //         float randomY = Random.Range(minY, maxY);
+    //         Vector2 randomPosition = new Vector2(randomX, randomY);
+
+    //         // Check if the position is valid (not colliding)
+    //         if (!Physics2D.OverlapCircle(randomPosition, spawnRadius, obstacleLayer))
+    //         {
+    //             alarmPosition = randomPosition;
+    //             validPosition = true;
+    //         }
+    //         attempts++;
+    //     }
+
+    //     // Instantiate the alarm if a valid position is found
+    //     if (validPosition)
+    //     {
+    //         Instantiate(alarmTrigger, alarmPosition, Quaternion.identity);
+    //         Debug.Log("Alarm spawned at: " + alarmPosition);
+    //     }
+    //     else
+    //     {
+    //         Debug.LogWarning("Failed to find a valid spawn position after " + maxAttempts + " attempts.");
+    //     }
+    // }
+
     void setPos(){
         // make random integer
         int randomPos = Random.Range(0,locations.Length);
@@ -19,7 +57,6 @@ public class RandomPositionSpawn : MonoBehaviour
         // instantiate the alarm
         Instantiate(alarmTrigger, alarmPosition.position, Quaternion.identity);
         Debug.Log("alarm position: " + randomPos);
-
     }
 
     void Update()
